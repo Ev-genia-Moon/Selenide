@@ -17,6 +17,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Start SUT
-        run: java -jar ./artifacts/app-card-delivery.jar &
+        run: java -jar ./artifacts/app-card-delivery.jar -port=7777 &
       - name: Build with Gradle
         run: ./gradlew test --info -Dselenide.headless=true
