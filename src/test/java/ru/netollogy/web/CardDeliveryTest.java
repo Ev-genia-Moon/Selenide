@@ -20,7 +20,7 @@ public class CardDeliveryTest {
         Selenide.open("http://localhost:7777");
     }
 
-    private String generateDate (int days, String pattern){
+    public String generateDate (int days, String pattern){
         return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern(pattern));
     }
 
