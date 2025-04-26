@@ -1,7 +1,6 @@
 package ru.netollogy.web;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selectors;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,7 +26,7 @@ public class CardDeliveryTest {
 
         @Test
         void shouldCardDelivery() {
-        String plannigDate = generateDate(3,"dd.MM.yyyy");
+        String plannigDate = generateDate(4,"dd.MM.yyyy");
 
             $("[data-test-id='city'] input").setValue("Казань");
             $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
