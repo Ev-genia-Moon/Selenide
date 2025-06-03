@@ -110,3 +110,7 @@ build_script:
 
 Вам необходимо самостоятельно изучить элементы на странице, чтобы подобрать правильные селекторы. Обратите внимание, что элементы могут быть как скрыты, так и динамически добавляться или удаляться из DOM.
 
+### Решение
+
+[Задание к занятию «Selenide»](https://github.com/Ev-genia-Moon/Selenide/blob/main/src/test/java/ru/netollogy/web/CardDeliveryTest.java)
+
